@@ -54,7 +54,7 @@ async function validateJSON(json) {
     const content = jsonStringify(json, { space: '  ' })
     await fs.promises.writeFile(`./tmp/${randomHex}.json`, content)
 
-    // TODO: lint file
+    // lint file
     const engine = new ESLint({
       useEslintrc: true,
     })
