@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines": { "node": "14.18" },
+  "engines": { "node": "14.x" },
   "author": "JP Lomas <jp@theqrl.org> (https://theqrl.org/)",
   "license": "MIT",
   "dependencies": {
