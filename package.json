@@ -1,0 +1,18 @@
+{
+  "name": "qrl-nft-microlinter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "JP Lomas <jp@theqrl.org> (https://theqrl.org/)",
+  "license": "MIT",
+  "dependencies": {
+    "@theqrl/validate-qrl-address": "^3.0.0",
+    "body-parser": "^1.19.1",
+    "eslint": "^8.8.0",
+    "eslint-plugin-jsonc": "^2.1.0",
+    "json-stable-stringify": "^1.0.1"
+  }
+}

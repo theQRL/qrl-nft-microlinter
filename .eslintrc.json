@@ -1,0 +1,30 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": ["plugin:jsonc/recommended-with-json"],
+  "overrides": [
+    {
+      "files": [ "*.json" ]
+    }
+  ],
+  "rules": {
+    "jsonc/indent": ["error",
+      2,
+      {
+      }
+    ],
+    "jsonc/object-curly-newline": ["error",
+      "always"
+    ],
+    "jsonc/object-property-newline": "error",
+    "jsonc/sort-keys": ["error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "minKeys": 2,
+        "natural": false
+      }
+    ]
+  }
+}
