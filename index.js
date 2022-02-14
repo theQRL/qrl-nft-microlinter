@@ -1,13 +1,21 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require("cors")
 const jsonStringify = require('json-stable-stringify')
 const validateQRLaddress = require('@theqrl/validate-qrl-address')
 const crypto = require('crypto')
+const process = require('process');
 const fs = require('fs')
 const { ESLint } = require('eslint')
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
+
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 function formatMessages(messages) {
   const errors = messages.map((message) => {
