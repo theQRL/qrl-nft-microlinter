@@ -49,6 +49,13 @@ async function validateJSON(json) {
       return {valid: false, message: "invalid provider QRL address"}
     }
 
+    // hashes to lowercase
+    json.filehash = json.filehash.toLowerCase()
+    json.metahash = json.metahash.toLowerCase()
+    
+    // QRL address to lowercase except initial 'Q'
+    json.provider = `Q${json.provider.toLowerCase().slice(1,79)}`
+
     const { metadata } = json
     const jsonStrMetadata = jsonStringify(metadata)
     const hash = crypto.createHash('sha512')
