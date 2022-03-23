@@ -137,7 +137,7 @@ app.get('/', (req, res) => {
       } \
       </script> \
     <h1>QRL NFT JSON microservice</h1> \
-     <p>See the docs for usage</p> \
+     <p>See the <a href="https://docs.theqrl.org">docs</a> for usage</p> \
      <form id="formElem"><textarea style="width: 100%; height: 300px;"></textarea></form> \
      <p><button id="check" onclick="submitform()">Check</button></p> \
      <p><span id="valid"></span><span id="message"><span></p><br />\
