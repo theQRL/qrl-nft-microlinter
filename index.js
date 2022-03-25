@@ -110,7 +110,7 @@ app.get('/', (req, res) => {
      var form = document.querySelector("#formElem"); \
     var data = JSON.parse(form.querySelector("textarea").value); \
     console.log(data);\
-        let response = await fetch("http://localhost:3000/lint", { \
+        let response = await fetch("https://nft-linter.theqrl.org/lint", { \
                 method: "POST", \
                 headers: { \
                     "Content-Type": "application/json", \
